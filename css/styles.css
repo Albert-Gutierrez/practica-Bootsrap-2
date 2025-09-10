@@ -11,12 +11,25 @@
 /*iconoc fontawesome*/
 
 /*3. ESTILOS GENERALES.....................................................................................................................*/
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Montserrat", sans-serif;
 
 }
 
-p,a,button,li,label,input,select,textarea,span {
+p,
+a,
+button,
+li,
+label,
+input,
+select,
+textarea,
+span {
     font-family: "Raleway", sans-serif;
 }
 
@@ -181,31 +194,32 @@ header .bag-button .counter-products {
     text-decoration: none;
 }
 
-#choosing-us a i{
+#choosing-us a i {
     margin-left: 4px;
     transition: .5s;
 }
 
-#choosing-us a:hover i{
+#choosing-us a:hover i {
     margin-left: 15px;
 }
 
 /*section products--------------------------------------------------------------------------------------------------*/
-#products{
+#products {
     width: 100%;
     position: relative;
     background: var(--gray-color);
     text-align: center;
     padding: 50px 0;
 }
-#products h2{
+
+#products h2 {
     font-size: var(--fs-title2);
     font-weight: 700;
     color: var(--dark-color);
     margin-bottom: 40px;
 }
 
-#products ul{
+#products ul {
     width: 420px;
     margin: 0 auto;
     background: #eeeeee;
@@ -215,19 +229,109 @@ header .bag-button .counter-products {
     justify-content: space-between;
 }
 
-#products li button{
+#products li button {
     color: var(--dark-color);
     padding: 10px 30px;
 }
 
-#products ul button:hover{
+#products ul button:hover {
     border: none;
 }
 
-#products ul button.active{
+#products ul button.active {
     background: var(--white-color);
     border-radius: 30px;
 }
+
+#products .card-product {
+    margin: 0 10px;
+}
+
+#products .card-product .cont-img {
+    background: #e6e6e6;
+    position: relative;
+    width: 100%;
+    min-height: 220px;
+    border-radius: 20px 20px 0 0;
+}
+
+#products .cont-img img {
+    width: 220px;
+    position: absolute;
+    top: -70px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    /* height: 280px; */
+}
+
+#products .slick-list {
+    padding: 150px 0;
+}
+
+#products .cont-info {
+    background: var(--white-color);
+    text-align: left;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+#products .cont-info p.category {
+    font-size: var(--fs-text);
+    color: #8d8d8d;
+}
+
+#products .cont-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+#products .star i {
+    color: #f6b76f;
+}
+
+#products .star {
+    margin-bottom: 30px;
+}
+
+#products .card-product h4 {
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    margin: 0;
+}
+
+#products .card-product h4 span {
+    font-size: 15px;
+    margin-right: 4px;
+}
+
+#products .card-product button {
+    border-radius: 50%;
+    background: #0d1b39;
+    width: 48px;
+    height: 48px;
+    border: none;
+    color: var(--white-color);
+    font-size: 24px;
+}
+
+#products .slick-arrow{
+    background: var(--white-color);
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+    border-radius: 50%;
+    color: #0d1b39;
+    border: 1px solid #dbdada;
+}
+
+#products .slick-arrow::before{
+    color: #0d1b39;
+}
+
+
 
 
 
@@ -245,14 +349,10 @@ header .bag-button .counter-products {
 
 
 /*6. ESTILOS RESPONSIVE TABLETS.................................................................................................*/
-@media screen and (min-width:768px) and (max-width:1080px) {
-
-}
+@media screen and (min-width:768px) and (max-width:1080px) {}
 
 
 
 
 /*7. SMARTPHONE..............................................................................................................................*/
-@media screen and (min-width:320px) and (max-width:767px) {
-
-}
+@media screen and (min-width:320px) and (max-width:767px) {}
