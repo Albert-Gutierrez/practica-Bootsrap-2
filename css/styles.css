@@ -411,6 +411,85 @@ header .bag-button .counter-products {
 
 
 /*SECCION MATERIALS------------------------------------------------------------------------------------------------------------------*/
+#materials {
+    width: 100%;
+    position: relative;
+    padding: 140px 0;
+}
+
+#materials h3 {
+    color: var(--primary-color);
+    font-size: var(--fs-title4);
+    font-size: 18px;
+    margin-top: 150px;
+    margin-left: 50px;
+
+}
+
+#materials h2 {
+    font-size: var(--fs-title2);
+    font-weight: 700;
+    color: var(--dark-color);
+    width: 430px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+#materials p {
+    font-size: var(--fs-text);
+    color: var(--dark-color);
+    width: 510px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+#materials a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 50px;
+}
+
+#materials a i {
+    margin-left: 4px;
+    transition: .5s;
+}
+
+#materials a:hover i {
+    margin-left: 15px;
+}
+
+
+#materials .cont-img {
+    position: relative;
+}
+
+#materials .cont-img1{
+    position: relative;
+    margin-top: 150px;
+    /* right: -35px; */
+}
+
+#materials .cont-img1 img{
+    top: 90px;
+    right: 60px;
+    border-radius: 20px ;
+     box-shadow: 0 16px 25px -10px #c49f72;
+     overflow-x: hidden;
+}
+
+#materials .cont-img1::before {
+    content: "";
+    width: 270px;
+    height: 400px;
+    background: #f7f7f7;
+    position: absolute;
+    z-index: -1;
+    top: -60px;
+    border-radius: 20px;
+    background: #f7f7f7;
+    top: -60px;
+    right: 50px;
+}
 
 
 
