@@ -541,14 +541,14 @@ header .bag-button .counter-products {
     border-radius: 50%;
 }
 
-#reviews .card-review .cont-info h4{
+#reviews .card-review .cont-info h4 {
     font-size: var(--fs-title4);
     color: var(--dark-color);
     margin-bottom: 10px;
     font-weight: 700;
 }
 
-#reviews .card-review .cont-info h5{
+#reviews .card-review .cont-info h5 {
     font-size: 12px;
     color: var(--dark-color);
     color: #999;
@@ -584,28 +584,54 @@ header .bag-button .counter-products {
     color: #0d1b39;
 }
 
+footer {
+    width: 100%;
+    position: relative;
+    padding: 90px 0;
+    background: #f7f7f7;
+}
 
+footer .logo {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
+footer h2 {
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
 
+footer .col-footer a {
+    text-decoration: none;
+    color: var(--dark-color);
+    display: block;
+    margin-bottom: 10px;
+}
 
+footer a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
 
+footer i {
+    margin-right: 10px;
+}
 
+footer .info {
+    padding-top: 60px;
+}
 
+footer .info a {
+    margin-right: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer .row-footer {
+    margin-top: 80px;
+}
 
 
 
@@ -615,7 +641,38 @@ header .bag-button .counter-products {
 
 
 /*6. ESTILOS RESPONSIVE TABLETS.................................................................................................*/
-@media screen and (min-width:768px) and (max-width:1080px) {}
+@media screen and (min-width:768px) and (max-width:1080px) {
+
+    header {
+        height: 130vh;
+    }
+
+    #hero {
+        padding: 63px 20px;
+    }
+
+    #choosing-us {
+        padding: 50px 0;
+    }
+
+    #experiences{
+        padding: 90px 0;
+    }
+    #experiences .cont-img img{
+        width: 100%;
+    }
+
+    #materials{
+        padding: 30px;
+        width: 100%;
+    }
+        
+    }
+
+
+
+
+}
 
 
 /*7. SMARTPHONE..............................................................................................................................*/
