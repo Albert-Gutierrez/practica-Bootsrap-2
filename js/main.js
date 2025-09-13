@@ -78,5 +78,14 @@ $(document).ready(function () {
             // instead of a settings object
         ]
     });
+});
 
+
+// Inicializa AOS cuando el DOM esté listo
+document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+        duration: 1000, // duración de animaciones en ms
+        once: true,     // animar solo la primera vez
+        offset: 120,    // distancia desde el viewport para activar
+    });
 });
