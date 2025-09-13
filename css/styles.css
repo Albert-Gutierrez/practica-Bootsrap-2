@@ -585,95 +585,530 @@ header .bag-button .counter-products {
 }
 
 footer {
-    width: 100%;
-    position: relative;
-    padding: 90px 0;
-    background: #f7f7f7;
+    background: #f9f9f9;
+    color: var(--dark-color);
+    padding: 60px 0 30px;
+    font-size: 14px;
 }
 
-footer .logo {
-    text-decoration: none;
-    color: var(--dark-color);
-    font-size: 28px;
-    font-weight: 700;
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+footer .col-md-6,
+footer .col-md-2 {
     margin-bottom: 20px;
 }
 
-footer h2 {
-    font-size: 20px;
-    color: var(--primary-color);
-    font-weight: 500;
+footer .logo {
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
-footer .col-footer a {
-    text-decoration: none;
-    color: var(--dark-color);
-    display: block;
+footer p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ff6b35;
+    /* Color de acento */
     margin-bottom: 10px;
 }
 
 footer a {
+    display: block;
+    color: #333;
     text-decoration: none;
-    color: var(--dark-color);
+    margin-bottom: 6px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff6b35;
 }
 
 footer i {
-    margin-right: 10px;
+    margin-right: 6px;
 }
 
-footer .info {
-    padding-top: 60px;
+/* Parte inferior del footer */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #999;
 }
 
-footer .info a {
-    margin-right: 20px;
+.footer-bottom a {
+    margin-left: 20px;
+    font-size: 13px;
+    color: #333;
 }
 
-footer .row-footer {
-    margin-top: 80px;
+.footer-bottom a:hover {
+    color: #ff6b35;
 }
-
-
-
-
-
 
 
 
 /*6. ESTILOS RESPONSIVE TABLETS.................................................................................................*/
-@media screen and (min-width:768px) and (max-width:1080px) {
+@media screen and (min-width: 768px) and (max-width: 1080px) {
 
+    /*dimension ipad air*/
     header {
         height: 130vh;
     }
 
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 640px;
+    }
+
+    .navbar-toggler {
+        background-color: white;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    #navbarNav li a {
+        margin: 0 10px;
+    }
+
+    header .bag-button {
+        display: none;
+    }
+
+    header .bag-button {
+        right: 40px;
+    }
+
     #hero {
-        padding: 63px 20px;
+        padding: 11px 20px;
     }
 
     #choosing-us {
         padding: 50px 0;
     }
 
-    #experiences{
+    #products {
+        padding: 50px 0 10px;
+    }
+
+    #products .slick-list {
         padding: 90px 0;
     }
-    #experiences .cont-img img{
+
+    #experiences {
+        padding: 90px 0;
+    }
+
+    #experiences .cont-img img {
         width: 100%;
     }
 
-    #materials{
+    #experiences .cont-info {
+        padding: 0px 60px 0 0;
+    }
+
+    #experiences .cont-info h2 {
+        width: 310px;
+    }
+
+    #experiences .cont-info p {
+        width: 310px;
+    }
+
+    #materials {
         padding: 30px;
         width: 100%;
     }
-        
+
+    #materials h2 {
+        width: 340px;
     }
 
+    #materials p {
+        width: 280px;
+    }
+
+    #materials .cont-img1 img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 15px auto;
+    }
+
+    #reviews .slick-track {
+        top: -60px;
+        left: -19px;
+    }
+
+    .slick-prev {
+        top: 170px;
+        /*bajo los botones y los centro*/
+    }
+
+    .slick-next {
+        top: 170px;
+        /*bajo los botones y los centro*/
+    }
+
+    #reviews .card-review {
+        transform: scale(0.67);
+        /* las hace 15% más pequeñas */
+        transform-origin: center center;
+        /* que escale desde el centro */
+        left: 0;
+        /* elimina desplazamiento extra */
+    }
+
+    #reviews .card-review .cont-info {
+        width: 100%;
+        /* ajusta el cuadro de info a la nueva escala */
+        left: 60%;
+        transform: translateX(-50%);
+    }
+
+    footer {
+        padding: 30px 130px 25px;
+    }
+
+    footer .container {
+        padding: 0 30px;
+    }
+
+    footer .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+    footer .col-md-6,
+    footer .col-md-2 {
+        flex: 1 1 200px;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer .logo {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
+    footer h3 {
+        font-size: 15px;
+    }
+
+    footer a {
+        font-size: 13px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 30px 130px 25px;
+        width: 100%;
+    }
+
+    .footer-bottom a {
+        margin: 0 10px;
+    }
+}
+
+
+
+
+/*7. SMARTPHONE..............................................................................................................................*/
+@media screen and (min-width:320px) and (max-width:767px) {
+
+    /*dimension iphon 14 pro max*/
+
+    header {
+        height: 100vh;
+    }
+
+    .navbar-toggler {
+        background-color: white;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    #navbarNav li a {
+        margin: 0 -8px;
+        font-size: 13px;
+        padding: 17px;
+    }
+
+    header .bag-button {
+        display: none;
+    }
+
+    header .bag-button {
+        right: 40px;
+    }
+
+    #hero {
+        padding: 11px 20px;
+    }
+
+    #hero h2 {
+        font-size: var(--fs-title2);
+        padding: 0 -4px;
+    }
+
+    #hero p {
+        padding: 12px 20px;
+    }
+
+    #hero form {
+        width: 390px;
+    }
+
+    #hero form input {
+        width: 300px;
+        padding: 10px 30px 10px 10px;
+    }
+
+    #choosing-us {
+        padding: 20px;
+    }
+
+    #choosing-us h3 {
+        margin-top: 20px;
+    }
+
+    #products {
+        padding: 50px 30px 0;
+    }
+
+    #products ul {
+        width: 350px;
+    }
+
+    #products li button {
+        padding: 10px 20px;
+    }
+
+    #products .slick-arrow{
+        top: 300px;
+        left: auto;
+    }
+
+    #products .slick-list {
+        padding: 90px 0;
+    }
+
+    #experiences {
+        padding: 90px 0;
+    }
+
+    #experiences .cont-img img {
+        width: 100%;
+    }
+
+    #experiences .cont-img::before {
+        content: "";
+        width: 300px;
+        height: 300px;
+        background: #f7f7f7;
+    }
+
+    #experiences .cont-img::after {
+        content: "";
+        width: 0px;
+        height: 0px;
+    }
+
+    #experiences .cont-info {
+        padding: 20px 60px 0 25px;
+    }
+
+    #experiences .cont-info h3 {
+        width: 380px;
+        text-align: center;
+    }
+
+    #experiences .cont-info h2 {
+        width: 380px;
+        text-align: center;
+        padding: 10px 45px;
+    }
+
+    #experiences .cont-info p {
+        width: 380px;
+        text-align: center;
+        padding: 10px 40px;
+    }
+
+    #experiences a {
+        width: 380px;
+        display: block;
+        text-align: center;
+    }
+
+    #materials {
+        padding: 30px;
+        width: 100%;
+    }
+
+    #materials {
+        text-align: center;
+    }
+
+    #materials h3 {
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+    #materials h2 {
+        text-align: center;
+        width: 100%;
+        margin-left: 5px;
+    }
+
+    #materials p {
+        text-align: center;
+        width: 280px;
+        margin-left: 30pxpx;
+    }
+
+    #materials a {
+        width: 280px;
+        display: block;
+        text-align: center;
+        margin: 15px 33px;
+
+    }
+
+    #materials .cont-img1 {
+        margin-top: -600px;
+    }
+
+    #materials .cont-img1 img {
+        width: 70%;
+        height: auto;
+        display: block;
+        margin: 15px 128px;
+    }
+
+    #reviews {
+        padding: 5px 0;
+    }
+
+    #reviews .slick-track {
+        top: -10px;
+        left: 20px;
+    }
+
+    .slick-prev {
+        top: 220px;
+        /*bajo los botones y los centro*/
+        left: 15px;
+    }
+
+    .slick-next {
+        top: 220px;
+        /*bajo los botones y los centro*/
+        left: 350px;
+    }
+
+    #reviews .card-review {
+        transform: scale(0.85);
+        /* las hace 15% más pequeñas */
+        transform-origin: center center;
+        /* que escale desde el centro */
+        left: 0;
+        /* elimina desplazamiento extra */
+    }
+
+    #reviews .card-review .cont-info {
+        width: 80%;
+        /* ajusta el cuadro de info a la nueva escala */
+        left: 46%;
+        transform: translateX(-50%);
+    }
+
+    footer {
+        padding: 20px 0
+    }
+
+    footer .container {
+        padding: 0 30px;
+    }
+
+    footer .row {
+        display: block;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+    footer .col-md-6,
+    footer .col-md-2 {
+        flex: 1 1 200px;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer .logo {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
+    footer h3 {
+        font-size: 15px;
+    }
+
+    footer a {
+        font-size: 13px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 30px 130px 25px;
+        width: 100%;
+    }
+
+    .footer-bottom a {
+        margin: 0 10px;
+    }
 
 
 
 }
-
-
-/*7. SMARTPHONE..............................................................................................................................*/
-@media screen and (min-width:320px) and (max-width:767px) {}
